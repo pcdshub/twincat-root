@@ -38,8 +38,13 @@ for repo in $REPOS; do
     pushd "$version_path" || continue
     for tag in $TAGS; do
         tag_path="$version_path/$tag"
+        # TwinCAT doesn't include the leading ``v`` in its dependency list.
+        without_v_path=$"$version_path/${tag:1}"
         if [ ! -d "$tag_path" ]; then
-            git clone --branch "$tag" --single-branch "$mirror_path" "$tag_path" &
+            git clone --recursive --branch "$tag" --single-branch "$mirror_path" "$tag_path" &
+        fi
+        if [ ! -f "${without_v_path}" ]; then
+            ln -sf "${tag}" "${without_v_path}"
         fi
     done
     wait
