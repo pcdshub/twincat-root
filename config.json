@@ -1,0 +1,46 @@
+{
+    "libraries": {
+        "LCLS General": {
+            "name": "LCLS General",
+            "versioned": true,
+            "path": "lcls-twincat-general",
+            "project": "LCLSGeneral.sln"
+        },
+        "lcls-twincat-motion": {
+            "name": "lcls-twincat-motion",
+            "versioned": true,
+            "path": "lcls-twincat-motion",
+            "project": "lcls-twincat-motion.sln"
+        },
+        "lcls-twincat-optics": {
+            "name": "lcls-twincat-optics",
+            "versioned": true,
+            "path": "lcls-twincat-optics",
+            "project": "lcls-twincat-optics.sln"
+        },
+        "lcls-twincat-physics": {
+            "name": "lcls-twincat-physics",
+            "versioned": true,
+            "path": "lcls-twincat-physics",
+            "project": "lcls-twincat-physics.sln"
+        },
+        "lcls-twincat-pmps": {
+            "name": "lcls-twincat-pmps",
+            "versioned": true,
+            "path": "lcls-twincat-pmps",
+            "project": "lcls-twincat-pmps.sln"
+        },
+        "lcls-twincat-vacuum": {
+            "name": "lcls-twincat-vacuum",
+            "versioned": true,
+            "path": "lcls-twincat-vacuum",
+            "project": "L2SIVacuumLib.sln"
+        },
+        "lcls-twincat-vacuum-serialdrivers": {
+            "name": "lcls-twincat-vacuum-serialdrivers",
+            "versioned": true,
+            "path": "lcls-twincat-vacuum-serialdrivers",
+            "project": "LCLSVacuumSerialDrivers.sln"
+        }
+    }
+}
