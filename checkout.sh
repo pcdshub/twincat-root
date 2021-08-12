@@ -8,6 +8,7 @@ lcls-twincat-physics
 lcls-twincat-pmps
 lcls-twincat-vacuum
 lcls-twincat-vacuum-serialdrivers
+lcls2-cc-lib
 "
 
 mkdir mirror
@@ -38,8 +39,9 @@ for repo in $REPOS; do
     for tag in $TAGS; do
         tag_path="$version_path/$tag"
         if [ ! -d "$tag_path" ]; then
-            git clone --branch "$tag" --single-branch "$mirror_path" "$tag_path"
+            git clone --branch "$tag" --single-branch "$mirror_path" "$tag_path" &
         fi
     done
+    wait
     popd
 done

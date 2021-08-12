@@ -24,23 +24,29 @@
             "path": "lcls-twincat-physics",
             "project": "lcls-twincat-physics.sln"
         },
-        "lcls-twincat-pmps": {
-            "name": "lcls-twincat-pmps",
+        "PMPS": {
+            "name": "PMPS",
             "versioned": true,
             "path": "lcls-twincat-pmps",
             "project": "lcls-twincat-pmps.sln"
         },
-        "lcls-twincat-vacuum": {
-            "name": "lcls-twincat-vacuum",
+        "LCLS Vacuum": {
+            "name": "LCLS Vacuum",
             "versioned": true,
             "path": "lcls-twincat-vacuum",
             "project": "L2SIVacuumLib.sln"
         },
-        "lcls-twincat-vacuum-serialdrivers": {
-            "name": "lcls-twincat-vacuum-serialdrivers",
+        "LCLSVacuumSerialDriverLib": {
+            "name": "LCLSVacuumSerialDriverLib",
             "versioned": true,
             "path": "lcls-twincat-vacuum-serialdrivers",
             "project": "LCLSVacuumSerialDrivers.sln"
+        },
+        "lcls2-cc-lib": {
+            "name": "lcls2-cc-lib",
+            "versioned": true,
+            "path": "lcls2-cc-lib",
+            "project": "lcls2-cc-lib.sln"
         }
     }
 }
